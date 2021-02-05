@@ -1,0 +1,130 @@
+/* Inicio del Reset css */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote, figcaption{
+    padding: 0;
+    margin: 0;
+    font-size: 100%; /* tamaño de letra en todos los navegadores */
+    font-weight: normal; /* sin negrita, italica, otras*/
+}
+
+ol{
+    padding-left: 2em;
+    list-style: decimal;
+}
+
+ul{
+    padding-left: 2em;
+    list-style: circle;
+}
+
+img, fieldset{
+    border: 0;
+}
+   
+q:before, q:after{
+    content: '';
+}
+/* Fin del Reset Css */
+
+body{
+    color: ghostwhite;
+    font-family: Arial, Helvetica, sans-serif;
+                /* tipo de letra, familia un poco mas especifica, familia general*/
+    font-size: 62%; /* define la letra mas pequeña */
+    /*background: rgb(3, 125, 190) url(../imagenes/fondo_div.png) repeat-x;*/
+    background: #09F url(../imagenes/fondo_div.png) repeat-x;
+}
+
+#principal{
+    width: 760px;
+    margin: auto; /* centra el contenido de la pagina */
+    background: url(../imagenes/FondoNubes.jpg) no-repeat;
+    /* border, no lo coloque porque se ve feo */
+    padding: 0 10px;
+}
+
+/* con esta regla solo se modifica el h1 que se encuentra dentro de principal, esto es para el caso que se tengan varios div */
+#principal h1, #solo{
+    color: #6EE041; /* verde */
+    font-family: "Arial Black", Arial, Helvetica, sans-serif;
+    font-size: 4em; /* Se puede llevar por %  - em - px */
+    margin-bottom: -38px;
+}
+
+/* estilo descendientes - css*/
+#principal h1 strong{
+    color: aliceblue;
+    font-size: 120px;
+}
+
+#principal #solo{
+    color: #b1a9a9;
+    font-size: 3em;
+    padding-top: -8px;
+    padding-left: 20px;
+    float: left;
+}
+
+/* cuando se utiliza decimales en css se coloca el punto */
+#principal h2{
+    float: none;
+    color: #a6f408;
+    font: bold 3.5em "Heofler Text", Garamond, Times, serif; /* formato tamaño y tipo de letra */
+    border-bottom: 2px solid darkblue;
+    margin-top: 70px;
+}
+
+#principal h3{
+    color: darkblue;
+    font-size: 1.9em;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-top: 25px;
+    margin-bottom: 10px;
+}
+
+#principal p{
+    font-size: 1.5em;
+    line-height: 150%; /* interlineado */
+    margin-left: 100px;
+    margin-right: 50px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+/* pseudo-elemento */
+#principal p::first-line{
+    font-weight: bold;
+    color: #6bdede;
+}
+
+#principal ul{
+    margin: 40px 0 30px 30px;
+    width: 160px;
+    float: right;
+}
+
+aside li{
+    font-size: 1.5em;
+    margin-bottom: 7px; /* separacion entre ellos*/
+}
+
+/* Pseudo-Clase */
+aside li:first-child{
+    list-style-type: none;
+    color: black;
+    font-weight: bold;
+    font-size: 1.8em;
+    margin-left: -18px;
+    
+}
+
+#principal .autor{
+    font-size: 1.6em;
+    margin: 5px 0 25px 50px;
+}
+
+#principal .autor strong{
+    color: black;
+    text-transform: uppercase;
+    margin-left: 5px;
+}

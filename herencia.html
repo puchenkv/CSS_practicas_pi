@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso CSS desde 0</title>
+
+    <!--    
+        Video 10.
+        Herencia. Practica Guiada. 
+        
+        Notas:
+        - Inacción de la Herencia: es cuando una etiqueta no hereda una propiedad de css, ejemplo h1.
+        
+        - Todas las propiedades que hacen referencia a bordes y colocacion de los elementos, no se heredan.
+        
+        - Las propiedades que hacen referencia del texto, se heredan.
+    -->
+    
+    <style>
+        /* Los parros estan recibiendo dos colores, por la definicion (especifico) y otro por herencia, cuando esto sucede el color que se aplica al color especifico */
+        p, ul{
+            color: #fd6b35;
+            margin-left: 50px; /* margen a la izquierda del texto */
+            padding-left: 20px;
+            border-left: solid 6px #DBC280;
+        }
+        
+        #p1{
+            border-bottom: 0px;
+            margin-bottom: 0px;
+            
+        }
+        
+        #ul1{
+            border-top: 0px;
+            margin-top: 0px;
+            
+        }
+        
+        .estilopagina{
+            font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            color: #84621c;
+            background-color: #fcfcac;
+            background-image: url(imagenes/fondo.jpg);
+            background-repeat: repeat-y;
+            background-position: center top;
+            width: 760px;  /*  no ocupe el 100% de la pantalla */
+            margin: 0 auto; /* centrado de la pagina */
+        }
+
+        ul{
+            color: #84621c;
+            padding-left: 60px;
+        }
+    </style>
+</head>
+<body class="estilopagina">
+
+    <header>
+        <div><img src="imagenes/banner.jpg" width="760" height="192" alt="CSS: The Missing Manual"></div>
+    </header>
+
+    <main>
+        <section>
+            <h1>El apasionante mundo de CSS</h1>
+            <p id="p1"><strong>Sed ut perspiciatis</strong> unde omnis iste natus error sit <em>voluptatem accusantium</em> doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo <strong>inventore veritatis et quasi architecto beatae</strong> vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  eos qui ratione voluptatem sequi nesciunt. </p>
+            <ul id="ul1">
+              <li>adipisci velit</li>
+              <li>autem vel eum iure re</li>
+              <li> ut lautem vel eum i</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>El gran poder de CSS</h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem <strong>Sed ut perspiciatis</strong> unde omnis iste natus error sit <em>voluptatem accusantium</em> doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo <em>inventore veritatis et quasi architecto</em> beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  eos qui ratione voluptatem sequi nesciunt. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </section>
+
+        <section>
+            <h3>Hazlo!</h3>
+            <p><strong>Sed ut perspiciatis</strong> unde omnis iste natus error sit <em>voluptatem accusantium</em> doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  eos qui ratione voluptatem sequi nesciunt. odi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima <strong>veniam, quis nostrum</strong> exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </section>
+
+        <section>
+            <h3>Hazlo bien!</h3>
+            <p><strong>Sed ut perspiciatis</strong> unde omnis iste natus error sit <em>voluptatem accusantium</em> doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia  eos qui ratione voluptatem sequi nesciunt. </p>
+        </section>
+        </main>
+
+</body>
+</html>

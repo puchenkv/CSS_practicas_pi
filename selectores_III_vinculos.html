@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso CSS desde 0</title>
+    
+    <!--    
+        Video: 7
+        Selectores. Parte III
+        
+        Notas:
+        Tipos de Selectores:
+        - Pseudo-clases (a:link): consiste en agregar el estado correspondiente al vinculo al selector del enlace. Las pseudo-clases se pueden aplicar a otras etiquetas como <p>.
+            Ej: a:hover
+        
+        - Los estados que puede tener los vinculos son:
+            1. link: hace referencia a el estilo que tiene el vinculo en reposo.
+
+            2. visited: es el estilo que tiene el vinculo cuando ha sido visitado.
+
+            3. hover: es el formato o estilo que tiene los vinculos cuando se pasa el raton por encima de los vinculos.
+
+            4. Active: es el estado o estilo cuando se haciendo un click
+        
+        - vaciar la cache del navegador para hacer pruebas
+    -->
+    
+    <style>
+    /* PSEUDO CLASES O PSEUDO ELEMENTOS */
+    /* este es el orden de funcionamiento */
+        
+    /* el orden es LOVE - HATE */
+        a:link{
+            color: #d485c2;
+            text-decoration: none;
+            background-color: blueviolet;
+        }
+        a:visited{
+            color: #2f0952;
+        }
+        
+        a:active{
+            color: black;
+        }
+        
+        a:hover{
+            color: yellowgreen;
+            text-decoration: underline;
+            background-color: beige;
+        }
+
+        p:hover{
+            background-color: aqua;
+        }
+        
+    </style>
+    
+</head>
+<body>
+
+    <main>
+    
+        <nav>
+            <h1>Vinculos</h1>
+            <a href="http://www.google.com">Buscador Google</a>
+            <br>
+
+            <a href="http://www.yahoo.com">Buscador Yahoo</a>
+            <br>
+
+            <a href="https://www.pildorasinformaticas.es/">Píldoras Informáticas</a>
+            <br>
+
+            <a href="https://www.bing.com/?setlang=es">Buscador Bing</a>
+            <br>
+        </nav>
+
+        <section>
+            <h2>Lorem</h2>
+            <p>(Marty notices something. He uses the binoculars to check. It's his father, George, dancing by himself! George is there waiting to go and meet up with Lorraine and "Calvin". Marty enters the hall and travels through the dancers. He spots Biff and his gang - 3-D, Match and Skinhead - drinking liquor and reading a naughty magazine called Ooh La La. The Almanac is in Biff's pocket. Marty uses the binoculars to see Skinhead nudging Biff. Marty sees that Skinhead saw Mr. Strickland watching them. Biff and his gang walk off as Strickland walks to them. Marty pulls down his hat and follows them. Outside, Marty spots Biff and his gang standing on some stairs. Biff is reading something. 3-D is holding a bottle of liquor.) (o.s) Where's that punk Calvin Klein? (o.s) How am I supposed to know? I ain't his secretary. (Cut to the Gang) Well go find him. He cost me three hundred bucks damage to my car, and I owe him a knuckle sandwich. Get going!</p>
+        </section>
+        
+    </main>
+
+</body>
+</html>

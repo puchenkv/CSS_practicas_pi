@@ -1,0 +1,57 @@
+p{
+    color: #666;
+    font-size: 1em;
+    font-family: "Helvetica Neue", Arial, Helvetica, sans-serif;
+    text-align: justify;
+    margin-left: 50px;
+}
+
+h1{
+    font-size: 2em;
+}
+
+/* selector de grupo: titulos */
+h1, h2, h3{
+    color: darkorange;
+    font-family: baskerville, "Palatino Linotype", times, serif;
+    border-top: 2px;
+    border-top-style: solid;
+    border-top-color: #419cea;
+    padding-top: 8px;
+    padding-left: 50px;
+}
+
+/* selector de clases */
+.atencion{
+    color: black;
+    border: 1px;
+    border-style: dashed;
+    border-color: #c99e50;
+    /*border: dashed 1px #c99e50;*/
+    background-color: #fff8a1;
+    margin: 10px 0px 10px 50px;
+    padding: 15px;
+}
+
+/* selectores descendientes dentro de estilos de clases*/
+.atencion strong{
+    color: #e0a415;
+}
+
+/* selector id, se usa para dar formato un elemento unico, tambien se utiliza para dar formato a las capas */
+#cuerpo{
+    background-color: #fcfcac;
+    background-image: url(../imagenes/fondo.jpg);
+    background-repeat: repeat-y;
+    background-position: center top; /*se encarga de centrar una imagen y que comience desde arriba*/
+    width: 760px;
+    margin: 0 auto; /*se encarga de centrar el contenido automaticamente en cualquier resolucion, hace referencia al diseño liquido*/
+}
+
+/* selector hermanos, modificara las etiquetas p que esta a continuacion de una etiqueta h1 */
+h1+p{
+    color: #dd3c3a;
+    font-size: 1.2em;
+    line-height:  150%; /* hace el interlineado entre las lineas de parrafo*/
+    margin-top: 20px;
+}

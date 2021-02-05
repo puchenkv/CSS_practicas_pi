@@ -1,0 +1,88 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>Galer&iacute;a P&iacute;ldoras</title>
+    <link href="./css/estilos_img.css" rel="stylesheet" type="text/css">
+    
+    <!--    
+        Video 20
+        Practica Guiada I. Galerias de Imagenes.
+        
+        Notas:
+        - Diseño liquido
+        
+        - Se puede aplicar dwr a esta galeria.
+    -->
+    
+    <style>
+        .foto img{
+            border: 1px solid #666;
+            background-color: white;
+            padding: 5px;
+            
+            position: relative;
+            top: -5px;
+            left: -8px;
+        }
+    
+        .figura p{
+            margin: 10px 0 0 0;
+            height: 5em;
+        }
+        
+        /* Modifica el pocisionamiento de la imagen y de la leyenda */
+        .figura{
+            float: left;
+            width: 210px;
+            margin: 0 10px 10px 10px;
+        }
+        
+        /* se coloca una imagen para simular un sombreado, en la actualidad se puede hacer el mismo efecto con css */
+        .foto{
+            background: url(./imagenes/sombra_img.gif
+            ) right bottom no-repeat;
+        }
+    </style>
+    
+</head>
+<body>
+    <div id="contenido">
+        <h1>P&iacute;ldoras inform&aacute;ticas Photo Gallery </h1>
+        <p class="intro">Una selecci&oacute;n de im&aacute;genes de naturaleza de <strong>P&iacute;ldoras Inform&aacute;ticas</strong>.</p>
+        
+        <div id="galeria">
+            <div class="figura">
+              <div class="foto"> <img src="./imagenes/gi_1_mundo.jpg" alt="Carpet Grass" width="200" height="200" /></div>
+              <p>Figura 1: &Aacute;rbol en mitad de la pradera.</p>
+            </div>
+            
+            <div class="figura">
+              <div class="foto"> <img src="./imagenes/gi_2_flores.jpg" alt="Bentgrass" width="200" height="200" /></div>
+              <p>Figura 2: Barco rodeado de icebergs.</p>
+            </div>
+            
+            <div class="figura">
+              <div class="foto"> <img src="./imagenes/gi_3_delfines.jpg" alt="Bluegrass" width="200" height="200" /></div>
+              <p>Figura 3: Cascada de agua espectacular. </p>
+            </div>
+            
+            <div class="figura">
+              <div class="foto"> <img src="./imagenes/gi_4_caballo_akhal_teke.jpg" alt="Leaves" width="200" height="200" /></div>
+              <p>Figura 4: <em>Ciervo en soledad</em>. </p>
+            </div>
+            
+            <div class="figura">
+              <div class="foto"> <img src="./imagenes/gi_5_corales.jpg" alt="Pattern Grass" width="200" height="200" /></div>
+              <p>Figura 5: Lago en calma. Espejo perfecto.</p>
+            </div>
+            
+            <div class="figura">
+              <div class="foto"> <img src="./imagenes/gi_6_mariposa.jpg" alt="Dandelion" width="200" height="200" /></div>
+              <p>Figura 6: Naturaleza bella. </p>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>

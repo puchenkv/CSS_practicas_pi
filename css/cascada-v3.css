@@ -1,0 +1,88 @@
+/* Inicio del Reset css, 
+    se crea al inicio del documento css, el fin de este procedimiento es que la pagina se vea bien en todos los navegaodres */
+
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, form, fieldset, blockquote, figcaption{
+    padding: 0;
+    margin: 0;
+    font-size: 100%; /* tamaño de letra en todos los navegadores */
+    font-weight: normal; /* sin negrita, italica, otras*/
+}
+
+img{
+    border: 0;
+}
+
+ol{
+    margin-left: 1.4;
+    list-style: decimal;
+}
+
+ul{
+    margin-left: 1.4;
+    list-style: square;
+}
+/* Fin del Reset Css */
+
+#principal{
+        float: left;
+        width: 580px;
+    }
+
+#lateral{
+        margin-left: 600px;
+        padding: 15px; /* distancia entre el contenido y el div */
+        background: #e4ccfc;
+    }
+
+body{
+    color: #59258d;
+    font-family: "Palatino Linotype", "Book Antigua", Palatino, serif;
+    padding-top: 105px;
+    background:#e4ccfc url(../imagenes/fondocuerpo.jpg) repeat-x;
+    width: 800px;
+    margin: 0 auto; /* centra y lo ajusta segun la resolucion de pantalla */
+    
+}
+
+h1{
+    font-size: 3em;
+    font-family: "Arial Black", Gadget, sans-serif; /* cascada, lo que se le indica en la etiqueta que es lo que muestra */
+}
+
+h2{
+    font-size: 2.2em;
+    color: #4b1441;
+    margin-bottom: 5px;
+}
+
+/* selector descendiente */
+#principal h2{
+    color: #7c245a;
+    border-bottom: 2px white solid;
+    background: url(../imagenes/flor.png) no-repeat;
+    padding: 0 0 6px 55px;    
+}
+
+#principal p{
+    color: #000;
+    font-family: "Palatino Linotype", "Book Antigua", Palatino, serif;
+    font-size: 1.1em;
+    line-height: 150%; /*significa el valor por defecto mas la mitad*/
+    margin-bottom: 10px;
+    margin-left: 55px;
+}
+
+#principal .introduccion{
+    color: #261748;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2em;
+    margin-left: 0px;
+    margin-bottom: 25px;
+}
+
+
+
+/*
+#lateral .up{
+    margin-bottom: 100px;
+}*/

@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Barra de Navegación con CSS</title>
+
+    <!--    
+        Video 25 y 26
+        Practica Guiada. Enlaces Web. Barra de Navegación
+        
+        Carpeta: vinculos_II
+    -->
+   
+<style type="text/css">
+
+        /* reset css */
+        html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+            padding: 0;
+            margin: 0;
+            font-size: 100%;
+            font-weight: normal;
+        }
+        table { border-collapse: collapse; border-spacing: 0; }
+        td, th, caption { font-weight: normal; text-align: left; }
+        img, fieldset { border: 0; }
+        ol { padding-left: 1.4em; list-style: decimal; }
+        ul { padding-left: 1.4em; list-style:square; }
+        q:before, q:after { content:''; }
+        /* final reset */
+
+        body {
+            font: 62.5% Verdana, Arial, Helvetica, sans-serif;
+            padding: 20px;
+        }
+        
+        /* Barra Vertical*/
+        #barra{
+            margin: 0px;
+            padding: 0px;
+            list-style: none; /*quita la viñeta a la lista*/
+            width: 190px;
+            border-bottom: 1px dashed #999; /* coloca la linea al ultimo elemento de la lista */
+        }
+        
+        /* Barra Horizontal */
+        #barrah{
+            margin: 0px;
+            padding: 0px;
+            list-style: none; /*quita la viñeta a la lista*/
+            border-left: 1px dashed #999;
+            overflow: hidden; /* elimina la propiedad float del lado izquierdo */
+        }
+
+        /* 
+            - Solo se modifica los vinculos que estan dentro de la #barra
+            - Selector descendiente
+            - la etiqueta a es de estilo inline
+            - Barra Vertical
+        */
+        #barra a{
+            color: #000;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px;
+            border-style: dashed;
+            border-color: #999;
+            padding: 7px 5px;
+            display: block; /*convierte una etiqueta inline en block*/
+            background-color: #e7e7e7;
+            background-image: url(../vinculos_II/images/fondolink.png);
+            background-repeat: no-repeat;
+            background-position: 0 2px; /* Modifica la posicion de la imagen de fondo */
+            padding: 7px 5px 7px 30px;
+            border-bottom: none; /* elimina el borden inferior de todos los vinculos */
+        }
+        
+        /* Barra Horizontal*/
+        #barrah a{
+            color: #000;
+            font-size: 12px;
+            text-transform: uppercase;
+            text-decoration: none;
+            border: 1px;
+            border-style: dashed;
+            border-color: #999;
+            padding: 7px 5px;
+            display: block; /*convierte una etiqueta inline en block*/
+            background-color: #e7e7e7;
+            background-image: url(../vinculos_II/images/fondolink.png);
+            background-repeat: no-repeat;
+            background-position: 0 2px; /* Modifica la posicion de la imagen de fondo */
+            padding: 7px 5px 7px 30px;
+            border-left: none; /* elimina el borde de lado inzquierdo de la barra */
+        }
+        
+        #barra a:hover, #barrah a:hover{
+            font-weight: bold;
+            background-color: #04f2f2;
+            background-position: 1px 50%;
+        }
+        
+        /* 
+         - Definicio de los enlaces a otras paginas usando listas desordenadas y css
+        
+         - Usando el selector de grupos
+        */
+        #inicio #link_inicio, #caracteristicas #link_caracteristicas, #expertos #link_expertos, #preguntas #link_pregruntas, #proyectos #link_proyectos, #foros #link_foros{
+            background-color: white;
+            background-image: url(../vinculos_II/images/fondolink.png);
+            background-position: right 100%;
+            font-weight: bold;
+        }
+        
+        p{
+            color: #180664; 
+            font-weight: bold; 
+            font-size: 18px;
+        }
+        
+        /* Barra Horizontal */
+        #barrah li{
+            float: left;
+            width: 190px; /* agranda la anchura de la caja*/
+            border: 1px;
+            border-color: #999;
+            /*border-style: dashed;*/
+        }
+    </style>
+    
+</head>
+
+<body id="proyectos">
+   
+    <p>Barra de Navegación Vertical</p>
+    <br>
+    <ul id="barra">
+        <li><a href="index.html" id="link_inicio">Inicio</a></li>
+        <li><a href="caracteristicas.html" id="link_caracteristicas">Características</a></li>
+        <li><a href="expertos.html" id="link_expertos">Expertos</a></li>
+        <li><a href="preguntas.html" id="link_pregruntas">Preguntas</a></li>
+        <li><a href="proyectos.html" id="link_proyectos">Proyectos</a></li>
+        <li><a href="foros.html" id="link_foros">Foro</a></li>
+    </ul>
+    
+    <br><br><br>
+    <p>Barra de Navegación Horizontal</p>
+    <br>
+    <ul id="barrah">
+        <li><a href="index.html" id="link_inicio">Inicio</a></li>
+        <li><a href="caracteristicas.html" id="link_caracteristicas">Características</a></li>
+        <li><a href="expertos.html" id="link_expertos">Expertos</a></li>
+        <li><a href="preguntas.html" id="link_pregruntas">Preguntas</a></li>
+        <li><a href="proyectos.html" id="link_proyectos">Proyectos</a></li>
+        <li><a href="foros.html" id="link_foros">Foro</a></li>
+    </ul>
+    
+</body>
+</html>

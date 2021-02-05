@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="zxx">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset= UTF-8">
+    <title>Curso CSS desde 0</title>
+    
+    <!--    
+        Video: 6
+        Selectores. Parte II
+        
+        Notas:
+        Tipos de Selectores:
+        - Etiquetas (<p>): se define la propiedad valor
+        
+        - Clases (class): comienzan con un punto (.). La definicion de las clases no deben de comenzar por numeros, ni simbolos, colocar la palabra en minuscula (case sensitive)
+        
+        - Identificador (id): comienza con una almuadilla (#). Se usa para especifica el estilo de un unico elemento en concreto. Ej: barra de navegación.
+        
+        - Grupos (h1, h2, p): consiste en usar varios selectores que estarán separados por comas (,); en donde se aplican las mismas características de estilo a esos selectores.
+        
+        - Universal (*): modifica el estilo de todas las etiquetas.
+        
+        - Descendientes (nav ul li): estos estilos se aplican tomando en cuenta la jerarquia en las etiquetas.
+    -->
+    
+    <style>
+        /* ESTILOS DESCENDIENTES CON ETIQUETAS*/
+        li a{
+            color: brown;
+        }
+        
+        li a strong{
+            color:darkorange;
+        }
+        
+        /* ESTILOS DE CLASE*/
+        .destacado{
+            font-size: 30px;
+            color: deeppink;
+        }
+        
+         /* ESTILOS DESCENDIENTES DE ETIQUETA Y CLASES*/
+        /* Cuando hay un espacion en blanco, el estilo de clase se aplicara cuando [descienda] de la etiqueta strong*/
+        strong .destacado{
+            text-decoration: underline;
+        }
+        
+        /* Si se coloca de esta forma: se le esta indicando que se aplique el subrallado a todos los estilos de clase que le han aplicado como [atributo] a la etiqueta strong */
+        strong.destacado{
+            text-decoration: underline;
+            color: crimson;
+        }
+    </style>
+    
+</head>
+
+<body>
+   
+    <main>
+        <section>
+            <h1>Curso CSS. Píldoras informáticas</h1>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p>
+            <br>
+
+            <p>Proyectos mansuales</p>   
+            <ul>
+                <li><a href="#">Reunión</a></li>
+                <li><a href="#">Estimación de necesidades</a></li>
+                <li><a href="#">Propuesta de <strong>presupuesto</strong></a></li>
+                <li><a href="#">Aceptación</a></li>
+            </ul>
+            <br>
+        </section>
+
+        <section>
+            <h2>Lorem Ipsum Dolor Sat</h2>
+            <p>Sed ut <a href="#">perspiciatis unde omnis iste natus</a> error sit <strong><span class="destacado">voluptatem</span></strong> accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui <span class="destacado">dolorem</span> ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae <strong class="destacado">consequatur</strong>, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </section>
+
+        <section>
+            <h2>Nisi Ut Aliquid </h2>
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+            
+            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        </section>
+    </main>
+
+    <footer>
+        Copyright 2012. <strong>Píldoras informáticas</strong>.
+    </footer>
+
+</body>
+</html>

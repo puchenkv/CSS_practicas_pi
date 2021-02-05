@@ -1,0 +1,121 @@
+/* Inicio Reset CSS */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+/* Fin */
+
+body {
+    font-size: 62.5%;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #002D4B;
+    /*#002D4B*/
+    background-color: #043771;
+}
+
+#principal {
+    width: 800px;
+    height: 136px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 4px solid #FF9;
+    background: transparent url(../vinculos_I/images/bg_banner.jpg) no-repeat;
+    border-bottom: 2px;
+}
+
+#cuerpo {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+    border: 4px solid #FF9;
+    background-color: #FBC355;
+}
+
+#principal h1 {
+	/*color: #292828;*/
+    color: #002C4A;
+	font-family: "Arial Black", Arial, Helvetica, sans-serif;
+	font-size: 4em;
+    width: 820px;
+    
+}
+
+#principal h1 strong {
+	font-size: 150px;
+	color: rgb(5, 216, 20, 0.8);
+   /* color:#05d814;*/
+	line-height: 1em;
+	margin-right: -1.25em;
+}
+
+#cuerpo h2 {
+	font: bold 3.5em "Hoefler Text", Garamond, Times, serif;
+	border-bottom: 1px solid #FF9;
+	margin-top: 25px;
+}
+
+#cuerpo h3 {
+    color: #002C4A;
+	font-size: 1.9em;
+	font-weight: bold;
+	text-transform: uppercase;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#cuerpo p {
+    color: #240f07;
+	font-size: 1.5em;
+	line-height: 150%;
+	margin-bottom: 35px;
+	margin-left: 100px;
+	margin-right: 6px;
+    text-align: justify;
+}
+
+#cuerpo p:first-line {
+  font-weight: bold;
+  color: #E37B42;
+}
+
+/* modifica el margen de los p */
+#recursos {
+	margin: 0 0 5px 28px;
+	width: 244px;
+	float: right;
+	padding: 15px;
+	background: #FF9;
+}
+
+#recursos h3 {
+	margin-top: 0;
+	color: #002D4B;
+}
+
+#recursos li {
+	font-size: 1.5em;
+    list-style-type: circle;
+	margin-bottom: 7px;
+	color: brown;
+}
+
+#cuerpo .byline {
+    color: #6a6565;
+	font-size: 1.6em;
+	margin: 5px 0 25px 40px;
+}
+
+#cuerpo .byline strong {
+	color: black;
+	text-transform: uppercase;
+	margin-left: 11px;
+} 
+

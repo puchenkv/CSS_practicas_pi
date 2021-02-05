@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso CSS desde 0</title>
+
+    <!--    
+        Video 11
+        Cascada II. Ejemplos.
+        
+        Notas:
+        - Se observa un
+    -->
+    <style>
+        /* Se observa un conflicto de la etiqueta strong con refencia al color, se esta aplicando estilos desde diferentes sitios  */
+        strong{
+            color: #F00;
+        }
+        
+        .colorc{
+            color: #00F;
+        }
+        
+        #colorid{
+            color: #0F0;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <main>
+        <!-- Aqui se presenta un conflicto entre el style en linea de la etiqueta strong y el estilo definido en head, es decir conflicto de estilos definidos en diferentes sitios, para este caso prevalece el estilo inline  -->
+        <p>Hoy es miércoles y hace <strong style="color:#FF0">calor</strong>!</p>
+
+        <!-- Aqui se presenta un conflicto entre el id y class, prevalece el id   -->
+        <p>Ir a <a href="#"><strong id="colorid" class="colorc">google</strong></a></p>
+    </main>
+    
+</body>
+</html>

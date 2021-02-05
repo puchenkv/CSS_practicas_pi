@@ -1,0 +1,73 @@
+/* reset css */
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+ padding: 0;
+ margin: 0;
+ font-size: 100%;
+ font-weight: normal;
+}
+table { border-collapse: collapse; border-spacing: 0; }
+td, th, caption { font-weight: normal; text-align: left; }
+img, fieldset { border: 0; }
+ol { padding-left: 1.4em; list-style: decimal; }
+ul { padding-left: 1.4em; list-style:square; }
+q:before, q:after { content:''; }
+/* fin css reset */
+
+#cont_principal {
+	width: 960px;
+	margin-right: auto;
+	margin-left: auto;
+    overflow: hidden; 
+}
+
+#principal {
+	float: right;
+	width: 565px;
+	margin-right: 15px;
+	padding-top: 25px;
+}
+
+
+#anuncio {
+    margin-right: 600px;
+	margin-left: 10px;
+}
+
+
+#banner h1 {
+	font: normal 48px Georgia, "Times New Roman", Times, serif;
+	text-align: right;
+    color: #272D32;
+}
+
+
+#principal h2 {
+	font: 24px Tahoma, Geneva, sans-serif;
+	margin-bottom: 15px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+
+#principal p {
+	font: 14px Tahoma, Geneva, sans-serif;
+	color: #323A3F;
+	margin-bottom: 20px;
+	font-family: Tahoma, Geneva, sans-serif;
+}
+
+#anuncio h2 {
+	font: italic bold normal 20px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	color: #323A3F;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	margin-bottom: 18px;
+}
+
+#anuncio ul {
+	font: 14px Tahoma, Geneva, sans-serif;
+}
+
+p{
+    text-align: justify;
+}

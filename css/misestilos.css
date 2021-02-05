@@ -1,0 +1,15 @@
+p{
+    font-family: Tahoma, Geneva, sans-serif;
+    color: black;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+h1{
+    text-align: center;
+    color:"00F";
+}
+
+body{
+    background-color: azure;
+}

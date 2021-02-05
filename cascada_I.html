@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Curso CSS desde 0</title>
+
+    <!--    
+        Video 11
+        Practica Guiada I. Cascada.
+        
+        Notas:
+        - Cuando se trata de la herencia y se aplica varios estilos como dos colores definidos tanto en la etiqueta el body y p. Se aplica la regla del mas especifico en este caso es el  Azul para la etiqueta strong.
+    -->
+
+    <style>
+        /* Regla: Cuando entra en juego la herencia */
+        body {
+            font-family: Verdana, Geneva, sans-serif;
+            color: blueviolet;
+        }
+
+        p {
+            color: darkred;
+        }
+
+        strong {
+            font-size: 36px;
+            color: darkorange;
+        }
+
+    </style>
+</head>
+
+<body>
+    
+    <main>
+        <p>Hoy es miércoles y hace <strong>calor</strong>!</p>
+
+        <p>Ir a <a href="#">google</a></p>
+    </main>
+
+</body>
+</html>
